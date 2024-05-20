@@ -14,21 +14,30 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        .input-container {
+          .container {
             box-shadow: 0px 0px 10px gray;
             width: 300px;
             font-size: 25px;
-            font-family: "EB Garamond", serif;
+            font-family: 'EB Garamond', serif;
             font-weight: 400;
             color: black;
             border-radius: 15px;
             padding: 15px 20px;
             text-align: center;
-            margin: 20px auto;
             background-color: white;
-            align-items: center;
-            justify-content: center;
             border: solid 2px black;
+        }
+        .container input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .container button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
         }
         .button-15 {
             background-image: linear-gradient(#42A1EC, #0070C9);
