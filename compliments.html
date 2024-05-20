@@ -14,12 +14,21 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        .container input {
-            width: calc(100% - 40px);
-            padding: 10px;
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .input-container {
+            box-shadow: 0px 0px 10px gray;
+            width: 300px;
+            font-size: 25px;
+            font-family: "EB Garamond", serif;
+            font-weight: 400;
+            color: black;
+            border-radius: 15px;
+            padding: 15px 20px;
+            text-align: center;
+            margin: 20px auto;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            border: solid 2px black;
         }
         .button-15 {
             background-image: linear-gradient(#42A1EC, #0070C9);
@@ -75,7 +84,7 @@
             width: 80px;
         }
     </style>
-    <div class="container">
+    <div class="input-container">
         <label for="complimentsInput">How many compliments?</label>
         <input type="number" id="complimentsInput" min="1" max="10">
         <button onclick="generateCompliments()" class="button-15">Generate</button>
@@ -85,7 +94,7 @@
     <script type="text/javascript">
         function generateCompliments() {
             let compliments = ['kind', 'beautiful', 'caring', 'nice', 'cute', 'smart', 'clever', 'wise', 'friendly'];
-            let animals = ['dog', 'cat', 'mouse', 'lion', 'fish', 'monkey', 'giraffe', 'bat', 'butterfly', 'pig', 'cow', 'fox', 'bear', 'hippo', 'elephant'];
+            let animals = ['dog', 'cat', 'mouse', 'lion', 'fish', 'monkey', 'girafe', 'bat', 'butterfly', 'pig', 'cow', 'fox', 'bear', 'hippo', 'elephant'];
             let number = parseInt(document.getElementById('complimentsInput').value);
             let resultDiv = document.getElementById('resultDiv');
             
